@@ -138,7 +138,7 @@
                     "image subtitle subtitle subtitle"
                     "image author   avatar   contacts"
                     "image footer   footer   footer";
-                grid-template-columns: 50% 1fr 1fr;
+                grid-template-columns: 50% 1fr min-content 1fr;
                 grid-template-rows: min-content min-content min-content 1fr;
             }
 
@@ -159,6 +159,7 @@
                     padding: 10px 15px 5px;
                     font-size: 76px;
                     text-align: center;
+                    letter-spacing: 1px;
                 }
 
                 #cover-main .cover--main__subtitle {
@@ -187,19 +188,19 @@
 
                 .cover--main__avatar {
                     grid-area: avatar;
-                    margin-left: 62px;
+                    margin-left: 25px;
                 }
 
                     .cover--main__avatar img {
-                        height: 50px;
+                        height: 35px;
                     }
 
                 .cover--main__contacts {
                     grid-area: contacts;
-                    font-size: 24px;
-                    margin-left: 15px;
-                    text-align: right;
-                    line-height: 36px;
+                    font-size: 20px;
+                    margin-left: 10px;
+                    text-align: left;
+                    line-height: 30px;
                 }
 
                 .cover--main__footer {
