@@ -113,18 +113,115 @@
     <!--    Старт    -->
     <!-- =========== -->
 
-    <section class="slide" id="cover">
-        <div>
-            <!-- <h2 class="shout shout--main">Автотестом по галактике</h1> -->
-        </div>
-        <figure>
-            <img style="width:100%; filter: blur(1px);" class="cover" src="pictures/cover-autotesting.webp" alt="">
-        </figure>
+    <section class="slide cover-main" id="cover-main">
         <style>
-            #cover:after {
+            #cover-main {
+                background: #FAEE9D;
+            }
+
+            #cover-main:after {
                 display: none;
             }
+
+            .cover-main {
+                padding: 25px;
+            }
+
+            .cover--main__wrapper {
+                border-top: 5px solid black;
+                border-bottom: 5px solid black;
+                padding: 15px 0;
+                margin: 60px 0 15px;
+                display: grid;
+                grid-template-areas: 
+                    "image title    title    title"
+                    "image subtitle subtitle subtitle"
+                    "image author   avatar   contacts"
+                    "image footer   footer   footer";
+                grid-template-columns: 50% 1fr 1fr;
+                grid-template-rows: min-content min-content min-content 1fr;
+            }
+
+                #cover-main .cover-main__image {
+                    grid-area: image;
+                    margin-right: 15px;
+                }
+
+                    .cover-main__image img {
+                        width: 100%;
+                    }
+
+                .cover--main__title {
+                    grid-area: title;
+                    background: #E3A632;
+                    margin: 0;
+                    line-height: 100%;
+                    padding: 10px 15px 5px;
+                    font-size: 76px;
+                    text-align: center;
+                }
+
+                #cover-main .cover--main__subtitle {
+                    grid-area: subtitle;
+                    background: #114C71;
+                    color: #FAEE9D;
+                    margin: 0;
+                    line-height: 100%;
+                    padding: 10px 15px 5px;
+                    font-size: 70px;
+                    letter-spacing: 4px;
+                    font-style: italic;
+                    margin: 15px 0;
+                }
+
+                .cover--main__author {
+                    grid-area: author;
+                    background: #E3A632;
+                    margin: 0;
+                    font-style: italic;
+                    line-height: 100%;
+                    padding: 10px 15px 5px;
+                    font-weight: 300;
+                    font-size: 27px;
+                }
+
+                .cover--main__avatar {
+                    grid-area: avatar;
+                    margin-left: 62px;
+                }
+
+                    .cover--main__avatar img {
+                        height: 50px;
+                    }
+
+                .cover--main__contacts {
+                    grid-area: contacts;
+                    font-size: 24px;
+                    margin-left: 15px;
+                    text-align: right;
+                    line-height: 36px;
+                }
+
+                .cover--main__footer {
+                    grid-area: footer;
+                }
         </style>
+        <div class="cover--main__wrapper">
+            <figure class="cover-main__image">
+                <img src="pictures/cover-main.jpg" />
+            </figure>
+            <h1 class="cover--main__title">АВТОТЕСТОМ</h1>
+            <h2 class="cover--main__subtitle">ПО ГАЛАКТИКЕ</h2>
+            <h3 class="cover--main__author">Паша Востриков</h3>
+            <div class="cover--main__avatar">
+                <img src="pictures/avatar.jpg" />
+            </div>
+            <div class="cover--main__contacts">
+                <a href="https://github.com/vostrik">github.com/vostrik</a><br/>
+                <a href="mailto: mail@vostrik.com">mail@vostrik.com</a>
+            </div>
+            <div class="cover--main__footer"></div>
+        </div>
     </section>
 
     <section class="slide">
