@@ -267,39 +267,13 @@
 
     <section class="slide">
         <div>
-            <h2 class="shout" style="font-size: 60px;">А ещё</h2>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div>
-            <h2 class="shout" style="font-size: 60px;">Автотесты — это <span class="font--red">про робота</span></h2>
-        </div>
-    </section>
-
-    <section class="slide">
-        <figure>
-            <img class="cover" src="pictures/sad-marvin2.jpeg">
-        </figure>
-    </section>
-
-    <section class="slide">
-        <h2 class="next" style="font-size: 32px; margin-top: -35px;">У меня миллион идей, но все они ведут к неминуемой гибели</h2>
-        <p>
-            <img style="margin-top: 15px; height: 70%;" class="cover" src="pictures/sad-marvin3.png">
-        </p>
-        <p class="next font--red" style="margin-top: 435px; text-align: center;">Marvin — Paranoid Android</p>
-    </section>
-
-    <section class="slide">
-        <div>
             <h2 class="shout" style="font-size: 60px;">Автотесты бесполезны</h2>
         </div>
     </section>
 
     <section class="slide">
         <figure>
-            <img class="cover" src="pictures/gangs-of-new-york.webp">
+            <img class="cover" src="pictures/bullshit-take.jpg">
         </figure>
     </section>
 
@@ -348,23 +322,6 @@
         <figure>
             <img class="cover cover" src="pictures/lead-time.png">
         </figure>
-    </section>
-
-    <section class="slide">
-        <h2>Весь доклад одним слайдом</h2>
-        <div>
-            <ol>
-                <li class="next">Создаём <span class="font--red">Page Object Model</span> и <span class="font--red">сценарные моки данных</span></li>
-                <li class="next">Тестируем в PR минимальный набор сценариев — <span class="font--red">Smoke</span></li>
-                <li class="next">Тестируем <span class="font--red">Nightly</span> полный набор сценариев</li>
-                <li class="next">Пишем тест-кейсы сразу по требованиям — <span class="font--red">BDD</span></li>
-                <li class="next">Пишем E2E тесты сразу при разработке фичи — <span class="font--red">TDD</span></li>
-            </ol>
-            <p>
-                <span class="next">Научились делать каждый пункт? <span class="font--red">Отдаём рутину AI</span><br/>
-                <span class="next"><span class="font--red">Двигайтесь поступательно</span> от (1) к (5) по мере взросления вашего проекта</span><br/>
-            </p>
-        </div>
     </section>
 
     <!-- =========== -->
@@ -1599,153 +1556,6 @@
         </div>
     </section>
 
-    <section class="slide">
-        <h2>Пример сценария для Smoke tests</h2>
-        <pre class="language-javascript">
-            <code>test.describe('Smoke Tests', () => {</code>
-            <code>    test('Activate Improbability Drive', async ({ page }) => {</code>
-            <code>        await page.context().newPage();</code>
-            <code>        await page.context().tracing.start({ screenshots: true, snapshots: true });</code>
-            <code>        await setupMocks(page, 'smoke');</code>
-            <code>&nbsp;</code>
-            <code>        const heartOfGold = new HeartOfGoldPage(page);</code>
-            <code>        await heartOfGold.navigate();</code>
-            <code>        await heartOfGold.activateImprobabilityDrive();</code>
-            <code>        await heartOfGold.takeScreenshot('smoke_activate_drive');</code>
-            <code>        await expect(heartOfGold.answerText).toHaveText('42');</code>
-            <code>&nbsp;</code>
-            <code>        await page.context().tracing.stop({ path: 'trace-smoke.zip' });</code>
-            <code>    });</code>
-            <code>});</code>
-        </pre>
-    </section>
-
-    <section class="slide">
-        <h2>Пример сценария для Smoke tests</h2>
-        <pre class="language-javascript">
-            <code>test.describe(<mark class="important">'Smoke Tests'</mark>, () => {</code>
-            <code>    test('Activate Improbability Drive', async ({ page }) => {</code>
-            <code>        await page.context().newPage();</code>
-            <code>        await page.context().tracing.start({ screenshots: true, snapshots: true });</code>
-            <code>        await setupMocks(page, 'smoke');</code>
-            <code>&nbsp;</code>
-            <code>        const heartOfGold = new HeartOfGoldPage(page);</code>
-            <code>        await heartOfGold.navigate();</code>
-            <code>        await heartOfGold.activateImprobabilityDrive();</code>
-            <code>        await heartOfGold.takeScreenshot('smoke_activate_drive');</code>
-            <code>        await expect(heartOfGold.answerText).toHaveText('42');</code>
-            <code>&nbsp;</code>
-            <code>        await page.context().tracing.stop({ path: 'trace-smoke.zip' });</code>
-            <code>    });</code>
-            <code>});</code>
-        </pre>
-    </section>
-
-    <section class="slide">
-        <h2>Пример сценария для Smoke tests</h2>
-        <pre class="language-javascript">
-            <code>test.describe(<mark class="important">'Smoke Tests'</mark>, () => {</code>
-            <code>    test('Activate Improbability Drive', async ({ page }) => {</code>
-            <code>        await page.context().newPage();</code>
-            <code>        await page.context().<mark>tracing.start</mark>({ screenshots: true, snapshots: true });</code>
-            <code>        await setupMocks(page, 'smoke');</code>
-            <code>&nbsp;</code>
-            <code>        const heartOfGold = new HeartOfGoldPage(page);</code>
-            <code>        await heartOfGold.navigate();</code>
-            <code>        await heartOfGold.activateImprobabilityDrive();</code>
-            <code>        await heartOfGold.takeScreenshot('smoke_activate_drive');</code>
-            <code>        await expect(heartOfGold.answerText).toHaveText('42');</code>
-            <code>&nbsp;</code>
-            <code>        await page.context().tracing.stop({ path: 'trace-smoke.zip' });</code>
-            <code>    });</code>
-            <code>});</code>
-        </pre>
-    </section>
-
-    <section class="slide">
-        <h2>Пример сценария для Smoke tests</h2>
-        <pre class="language-javascript">
-            <code>test.describe(<mark class="important">'Smoke Tests'</mark>, () => {</code>
-            <code>    test('Activate Improbability Drive', async ({ page }) => {</code>
-            <code>        await page.context().newPage();</code>
-            <code>        await page.context().tracing.start({ screenshots: true, snapshots: true });</code>
-            <code>        await <mark>setupMocks</mark>(page, 'smoke');</code>
-            <code>&nbsp;</code>
-            <code>        const heartOfGold = new HeartOfGoldPage(page);</code>
-            <code>        await heartOfGold.navigate();</code>
-            <code>        await heartOfGold.activateImprobabilityDrive();</code>
-            <code>        await heartOfGold.takeScreenshot('smoke_activate_drive');</code>
-            <code>        await expect(heartOfGold.answerText).toHaveText('42');</code>
-            <code>&nbsp;</code>
-            <code>        await page.context().tracing.stop({ path: 'trace-smoke.zip' });</code>
-            <code>    });</code>
-            <code>});</code>
-        </pre>
-    </section>
-
-    <section class="slide">
-        <h2>Пример сценария для Smoke tests</h2>
-        <pre class="language-javascript">
-            <code>test.describe(<mark class="important">'Smoke Tests'</mark>, () => {</code>
-            <code>    test('Activate Improbability Drive', async ({ page }) => {</code>
-            <code>        await page.context().newPage();</code>
-            <code>        await page.context().tracing.start({ screenshots: true, snapshots: true });</code>
-            <code>        await setupMocks(page, 'smoke');</code>
-            <code>&nbsp;</code>
-            <code>        const heartOfGold = new HeartOfGoldPage(page);</code>
-            <code>        await heartOfGold.navigate();</code>
-            <code>        await heartOfGold.<mark>activateImprobabilityDrive</mark>();</code>
-            <code>        await heartOfGold.takeScreenshot('smoke_activate_drive');</code>
-            <code>        await expect(heartOfGold.answerText).toHaveText('42');</code>
-            <code>&nbsp;</code>
-            <code>        await page.context().tracing.stop({ path: 'trace-smoke.zip' });</code>
-            <code>    });</code>
-            <code>});</code>
-        </pre>
-    </section>
-
-    <section class="slide">
-        <h2>Пример сценария для Smoke tests</h2>
-        <pre class="language-javascript">
-            <code>test.describe(<mark class="important">'Smoke Tests'</mark>, () => {</code>
-            <code>    test('Activate Improbability Drive', async ({ page }) => {</code>
-            <code>        await page.context().newPage();</code>
-            <code>        await page.context().tracing.start({ screenshots: true, snapshots: true });</code>
-            <code>        await setupMocks(page, 'smoke');</code>
-            <code>&nbsp;</code>
-            <code>        const heartOfGold = new HeartOfGoldPage(page);</code>
-            <code>        await heartOfGold.navigate();</code>
-            <code>        await heartOfGold.activateImprobabilityDrive();</code>
-            <code>        await heartOfGold.<mark>takeScreenshot</mark>('smoke_activate_drive');</code>
-            <code>        await expect(heartOfGold.answerText).toHaveText('42');</code>
-            <code>&nbsp;</code>
-            <code>        await page.context().tracing.stop({ path: 'trace-smoke.zip' });</code>
-            <code>    });</code>
-            <code>});</code>
-        </pre>
-    </section>
-
-    <section class="slide">
-        <h2>Пример сценария для Smoke tests</h2>
-        <pre class="language-javascript">
-            <code>test.describe(<mark class="important">'Smoke Tests'</mark>, () => {</code>
-            <code>    test('Activate Improbability Drive', async ({ page }) => {</code>
-            <code>        await page.context().newPage();</code>
-            <code>        await page.context().tracing.start({ screenshots: true, snapshots: true });</code>
-            <code>        await setupMocks(page, 'smoke');</code>
-            <code>&nbsp;</code>
-            <code>        const heartOfGold = new HeartOfGoldPage(page);</code>
-            <code>        await heartOfGold.navigate();</code>
-            <code>        await heartOfGold.activateImprobabilityDrive();</code>
-            <code>        await heartOfGold.takeScreenshot('smoke_activate_drive');</code>
-            <code>        await expect(heartOfGold.answerText).<mark>toHaveText('42')</mark>;</code>
-            <code>&nbsp;</code>
-            <code>        await page.context().tracing.stop({ path: 'trace-smoke.zip' });</code>
-            <code>    });</code>
-            <code>});</code>
-        </pre>
-    </section>
-
     <!-- =========== -->
     <!--    Автотесты пишутся, но бессистемно    -->
     <!-- =========== -->
@@ -1895,12 +1705,6 @@
                     </ul>
                 </li>
             </ul>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div>
-            <h2 class="shout" style="font-size: 40px;">Протестировали. Зафиксировали поведение бага. В тесте.</h2>
         </div>
     </section>
 
