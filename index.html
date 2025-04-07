@@ -42,6 +42,10 @@
         pre code.hljs{
             padding: 0 0 0 100px
         }
+
+        .no-ribbon:after {
+            display: none;
+        }
     </style>
 </head>
 
@@ -292,12 +296,51 @@
         <ul>
             <li class="next">получаю деньги за веб-разработку с 2010</li>
             <li class="next">занимаюсь всеми видами JS в Kaspersky</li>
-            <li class="next">организую <a href="https://moscowjs.org/">MoscowJS</a></li>
             <li class="next">Делаю <a href="https://github.com/vostrik/bibliography">Reading list for IT-hungry people</a></li>
+            <li class="next">организую <a href="https://moscowjs.org/">MoscowJS</a></li>
         </ul>
         <figure>
             <img class="cover cover--right cover--medium" src="illustrations/intro.png" />
         </figure>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover cover" src="pictures/moscowjs.png">
+        </figure>
+    </section>
+
+    <section class="slide no-ribbon">
+        <figure>
+            <img class="cover cover" src="pictures/moscowjs-org.png">
+        </figure>
+    </section>
+
+    <section class="slide no-ribbon">
+        <figure>
+            <img class="cover cover" src="pictures/drinkup-event.jpg">
+        </figure>
+    </section>
+
+    <section class="slide no-ribbon">
+        <figure>
+            <img class="cover cover" src="pictures/drinkup-org.jpg">
+        </figure>
+    </section>
+
+    <section class="slide no-ribbon">
+        <figure>
+            <img class="cover cover" src="pictures/drinkup.png">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2 class="shout" style="font-size: 60px;">
+                Технологии и сообщества делают люди<br/>
+                <span class="font--red">А что по тестам?</span>
+            </h2>
+        </div>
     </section>
 
     <section class="slide">
@@ -374,30 +417,6 @@
     </section>
 
     <section class="slide">
-        <h2 style="margin-top: -45px;">Лор Автостопом по галактике</h2>
-        <p style="font-size: 20px; opacity: 0.5; margin-top: -35px;">Или предметная область</p>
-        <figure>
-            <img class="cover" style="margin-top: 60px; height: 90%;" src="pictures/lore-6.png">
-        </figure>
-    </section>
-
-    <section class="slide">
-        <h2 style="margin-top: -45px;">Лор Автостопом по галактике</h2>
-        <p style="font-size: 20px; opacity: 0.5; margin-top: -35px;">Или предметная область</p>
-        <figure>
-            <img class="cover" style="margin-top: 60px; height: 90%;" src="pictures/lore-7.png">
-        </figure>
-    </section>
-
-    <section class="slide">
-        <h2 style="margin-top: -45px;">Лор Автостопом по галактике</h2>
-        <p style="font-size: 20px; opacity: 0.5; margin-top: -35px;">Или предметная область</p>
-        <figure>
-            <img class="cover" style="margin-top: 60px; height: 90%;" src="pictures/lore-8.png">
-        </figure>
-    </section>
-
-    <section class="slide">
         <div>
             <h2 class="shout" style="font-size: 60px;">Почему «Автотестом по галактике»?</h5>
         </div>
@@ -433,15 +452,146 @@
         <h2>Почему «Автотестом по галактике»?</h5>
         <div>
             <p>
-                Какой главный <span class="font--red">ответ</span> мы даём при разработке?<br/>
-                А какой <span class="font--red">вопрос</span>?
+                А какой главный <span class="font--red">вопрос</span> при разработке?
             </p>
+            <h2 class="next">код <span class="next">работает <span class="next">правильно <span class="next">и стабильно?</span></span></span></h2>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2 class="shout" style="font-size: 80px;">Построение <span class="font--red">системы</span> автотестирования</h2>
+        </div>
+    </section>
+
+    <!-- =========== -->
+    <!--    Автотесты вообще не пишутся    -->
+    <!-- =========== -->
+
+    <section class="slide">
+        <div>
+            <h2 class="shout" style="font-size: 60px;">
+                Автотесты вообще не пишутся<br/><br/>
+                <span style="font-size: 30px; opacity: 0.5;">Кейс 1</small>
+            </h2>
+        </div>
+    </section>
+
+    <section class="slide">
+        <div style="margin-top: -35px;">
+            <h2 style="font-size: 48px; ">Кейс 1: Автотесты вообще не пишустся</h2>
+            <p style="font-size: 20px; opacity: 0.5;">Хотя бы на один ма-ааа-ленький сервис</p>
+        </div>
+        <p>
+            <div class="next">Это когда всё протестировали руками и всё хорошо</div>
+            <div class="next">А потом</div>
+            <div class="next">Бац!</div>
+            <div class="next"><span class="font--red">Бац!</span></div>
+            <div class="next">Бац! Бац!</div>
+            <div class="next"><span class="font--red">Бац! Бац!</span></div>
+        </p>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="pictures/gc-1.png" />
+        </figure>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="pictures/gc-2.png" />
+        </figure>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="pictures/500-error.png" />
+        </figure>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="pictures/bear.png" />
+        </figure>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover" style="height: 60%;" src="pictures/refund.png" />
+        </figure>
+    </section>
+
+    <section class="slide">
+        <div>
+            <h2 class="shout" style="font-size: 60px; margin-top: -25px;">
+                Я Паша<br/><br/>и я периодически не пишу тесты
+            </h2>
+        </div>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="pictures/no-autotests.jpg">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="pictures/dont-panic.jpg">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>Кейс 1: Автотесты вообще не пишутся</h2>
+        <div>
             <ul>
-                <li class="next">код работает?</li>
-                <li class="next">он протестирован?</li>
-                <li class="next">он правильно работает?</li>
-                <li class="next">он стабильно правильно работает?</li>
+                <li class="next"><span class="font--red">Проблема #1</span>: что-то поменяли, что-то сломалось</li>
+                <li class="next"><span class="font--red">Проблема #2</span>: ручное тестирование — узкое место</li>
+                <li class="next">Пример: cохраняем данные у одного пользователя, меняется у другого</li>
             </ul>
+        </div>
+    </section>
+
+    <section class="slide">
+        <p style="font-size: 20px;">Нашли крита. Случайно. В пятницу. Во время командой 🍻 вечеринки. За день до релиза.</p>
+        <figure>
+            <img class="cover cover" style="height: 75%; margin-top: 6%;" src="pictures/steep-dive.png">
+        </figure>
+    </section>
+
+    <section class="slide">
+        <h2>Кейс 1: Автотесты вообще не пишутся</h2>
+        <div>
+            <ul>
+                <li><span class="font--red">Проблема #1</span>: что-то поменяли, что-то сломалось</li>
+                <li><span class="font--red">Проблема #2</span>: ручное тестирование — узкое место</li>
+                <li>Пример: cохраняем данные у одного пользователя, меняется у другого</li>
+                <li class="next">Причина: было «не до» написания тестов</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="slide">
+        <h2>Кейс 1: Автотесты вообще не пишутся</h2>
+        <p style="text-align: center;">
+            <img style="height: 50%; margin-top: 6%;" src="pictures/retro.png">
+        </p>
+        <h3 style="text-align: center;">«было не до тестов»</h3>
+    </section>
+
+    <section class="slide">
+        <h2>Кейс 1: Автотесты вообще не пишутся</h2>
+        <div>
+            <p>Решение: <span class="next font--red">написать чуть-чуть тестов</span></p>
+            <ol>
+                <li class="next">Выделить основные сценарии для тестирования</li>
+                <li class="next">Начать писать валидационные Smoke тесты</li>
+                <li class="next">
+                    Время прогона Smoke < времени чаепития<br/>
+                    <span class="next font--red">< 15 min</span>
+                </li>
+            </ol>
         </div>
     </section>
 
@@ -1419,143 +1569,6 @@
         </figure>
     </section>
 
-    <section class="slide">
-        <div>
-            <h2 class="shout" style="font-size: 80px;">Построение <span class="font--red">системы</span> автотестирования</h2>
-        </div>
-    </section>
-
-    <!-- =========== -->
-    <!--    Автотесты вообще не пишутся    -->
-    <!-- =========== -->
-
-    <section class="slide">
-        <div>
-            <h2 class="shout" style="font-size: 60px;">
-                Автотесты вообще не пишутся<br/><br/>
-                <span style="font-size: 30px; opacity: 0.5;">Кейс 1</small>
-            </h2>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div style="margin-top: -35px;">
-            <h2 style="font-size: 48px; ">Кейс 1: Автотесты вообще не пишустся</h2>
-            <p style="font-size: 20px; opacity: 0.5;">Хотя бы на один ма-ааа-ленький сервис</p>
-        </div>
-        <p>
-            <div class="next">Это когда всё протестировали руками и всё хорошо</div>
-            <div class="next">А потом</div>
-            <div class="next">Бац!</div>
-            <div class="next"><span class="font--red">Бац!</span></div>
-            <div class="next">Бац! Бац!</div>
-            <div class="next"><span class="font--red">Бац! Бац!</span></div>
-        </p>
-    </section>
-
-    <section class="slide">
-        <figure>
-            <img class="cover" src="pictures/gc-1.png" />
-        </figure>
-    </section>
-
-    <section class="slide">
-        <figure>
-            <img class="cover" src="pictures/gc-2.png" />
-        </figure>
-    </section>
-
-    <section class="slide">
-        <figure>
-            <img class="cover" src="pictures/500-error.png" />
-        </figure>
-    </section>
-
-    <section class="slide">
-        <figure>
-            <img class="cover" src="pictures/bear.png" />
-        </figure>
-    </section>
-
-    <section class="slide">
-        <figure>
-            <img class="cover" style="height: 60%;" src="pictures/refund.png" />
-        </figure>
-    </section>
-
-    <section class="slide">
-        <div>
-            <h2 class="shout" style="font-size: 60px; margin-top: -25px;">
-                Я Паша<br/><br/>и я периодически не пишу тесты
-            </h2>
-        </div>
-    </section>
-
-    <section class="slide">
-        <figure>
-            <img class="cover" src="pictures/no-autotests.jpg">
-        </figure>
-    </section>
-
-    <section class="slide">
-        <figure>
-            <img class="cover" src="pictures/dont-panic.jpg">
-        </figure>
-    </section>
-
-    <section class="slide">
-        <h2>Кейс 1: Автотесты вообще не пишутся</h2>
-        <div>
-            <ul>
-                <li class="next"><span class="font--red">Проблема #1</span>: что-то поменяли, что-то сломалось</li>
-                <li class="next"><span class="font--red">Проблема #2</span>: ручное тестирование — узкое место</li>
-                <li class="next">Пример: cохраняем данные у одного пользователя, меняется у другого</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="slide">
-        <p style="font-size: 20px;">Нашли крита. Случайно. В пятницу. Во время командой 🍻 вечеринки. За день до релиза.</p>
-        <figure>
-            <img class="cover cover" style="height: 75%; margin-top: 6%;" src="pictures/steep-dive.png">
-        </figure>
-    </section>
-
-    <section class="slide">
-        <h2>Кейс 1: Автотесты вообще не пишутся</h2>
-        <div>
-            <ul>
-                <li><span class="font--red">Проблема #1</span>: что-то поменяли, что-то сломалось</li>
-                <li><span class="font--red">Проблема #2</span>: ручное тестирование — узкое место</li>
-                <li>Пример: cохраняем данные у одного пользователя, меняется у другого</li>
-                <li class="next">Причина: было «не до» написания тестов</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="slide">
-        <h2>Кейс 1: Автотесты вообще не пишутся</h2>
-        <p style="text-align: center;">
-            <img style="height: 50%; margin-top: 6%;" src="pictures/retro.png">
-        </p>
-        <h3 style="text-align: center;">«было не до тестов»</h3>
-    </section>
-
-    <section class="slide">
-        <h2>Кейс 1: Автотесты вообще не пишутся</h2>
-        <div>
-            <p>Решение: <span class="next font--red">написать чуть-чуть тестов</span></p>
-            <ol>
-                <li class="next">Выделить основные сценарии для тестирования</li>
-                <li class="next">Начать писать валидационные Smoke тесты</li>
-                <li class="next">
-                    Время прогона Smoke < времени чаепития<br/>
-                    <span class="next font--red">< 15 min</span>
-                </li>
-            </ol>
-        </div>
-    </section>
-
     <!-- =========== -->
     <!--    Автотесты пишутся, но бессистемно    -->
     <!-- =========== -->
@@ -1581,7 +1594,6 @@
                         <li class="next">дублирование тестов на пользовательский сценарий</li>
                         <li class="next">ошибки в Preparation tests</li>
                         <li class="next">хрупкость при изменении UI</li>
-                        <li class="next">случайным образом падающие тесты</li>
                     </ul>
                 </li>
             </ul>
@@ -1602,7 +1614,6 @@
         <div>
             <p>Решение:</p>
             <ol>
-                <li class="next">Развить архитектуру тестов</li>
                 <li class="next">Выделить метрику стабильности тестов</li>
                 <li class="next">Категоризация тестов: меньше дублирования и бесполезных тестов</li>
             </ol>
@@ -2079,33 +2090,6 @@
                 <span><span class="font--red">Двигайтесь поступательно</span> от (1) к (5) по мере взросления вашего проекта</span><br/>
             </p>
         </div>
-    </section>
-
-    <!-- =========== -->
-    <!--    Что ещё можем построить на E2E?    -->
-    <!-- =========== -->
-
-    <section class="slide">
-        <div>
-            <h2 class="shout" style="font-size: 60px;">
-                Что ещё можем построить на E2E?<br/><br/>
-                <span style="font-size: 30px; opacity: 0.5;">Кейс 5</small>
-            </h2>
-        </div>
-    </section>
-
-    <section class="slide">
-        <div style="margin-top: -35px;">
-            <h2 style="font-size: 48px; ">Кейс 5: Что ещё можем построить на E2E?</h2>
-        </div>
-        <ul>
-            <li class="next">Accessibility testing</li>
-            <li class="next">Stability testing</li>
-            <li class="next">Load testing</li>
-            <li class="next">AI automation</li>
-            <li class="next">...</li>
-            <li class="next"><span class="font--red">Может</span> part 2 или workshop <span class="font--red">на следующей HolyJS?</span></li>
-        </ul>
     </section>
 
     <!-- =========== -->
