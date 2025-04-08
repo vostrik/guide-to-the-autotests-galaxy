@@ -285,7 +285,7 @@
         <div>
             <h2 class="shout" style="font-size: 60px; margin-top: -7%;">
                 Автотесты бесполезны<br/><br/>
-                <span class="font--red">Пока мы не поймем, зачем они нужны</span>
+                <span class="font--red">Пока мы не поймём, зачем они нужны</span>
             </h2>
         </div>
     </section>
@@ -306,7 +306,7 @@
 
     <section class="slide">
         <figure>
-            <img class="cover cover" src="pictures/who-wants-to-become-a-millionaire.png">
+            <img class="cover cover" src="pictures/billionaire.jpg">
         </figure>
     </section>
 
@@ -388,9 +388,9 @@
         <section>
             <blockquote class="block--space-top">
                 главный ответ жизни, вселенной и всего остального:</span><br/>
-                – 42 <span style="opacity: 0.5;">(суперькомпьютер)</span><br/>
+                – 42 <span style="opacity: 0.5;">(суперкомпьютер)</span><br/>
                 – И всё? <span style="opacity: 0.5;">(люди)</span><br/>
-                – А какой вопрос? <span style="opacity: 0.5;">(суперькомпьютер)</span>
+                – А какой вопрос? <span style="opacity: 0.5;">(суперкомпьютер)</span>
             </blockquote>
             <p style="font-size: 20px; text-align: right;" class="font--red">Дуглас Адамс, «Автостопом по галактике»</p>
         </section>
@@ -477,9 +477,9 @@
         </figure>
     </section>
 
-    <section class="slide">
+    <section class="slide no-ribbon">
         <figure>
-            <img class="cover" style="height: 60%;" src="pictures/refund.png" />
+            <img class="cover" style="height: 100%;" src="pictures/refund.png" />
         </figure>
     </section>
 
@@ -515,7 +515,7 @@
     </section>
 
     <section class="slide">
-        <p style="font-size: 20px;">Нашли крита. Случайно. В пятницу. Во время командой 🍻 вечеринки. За день до релиза.</p>
+        <p style="font-size: 19px;">Нашли крита. Случайно. В пятницу. Во время командной 🍻 вечеринки. За день до релиза.</p>
         <figure>
             <img class="cover cover" style="height: 75%; margin-top: 6%;" src="pictures/steep-dive.png">
         </figure>
@@ -889,6 +889,7 @@
         <div>
             <h2 class="shout" style="font-size: 60px;">
                 Но если душа просит хардкора в тестах 🤘<br/>
+                &nbsp;
             </h2>
         </div>
     </section>
@@ -939,12 +940,11 @@
             <code>    /**</code>
             <code>     * Получить ответ на Главный Вопрос Жизни, Вселенной и Всего Такого.</code>
             <code>     * Активирует Двигатель Невозможности и дожидается корректного ответа.</code>
-            <code>     * @returns Ответ (ожидаемо "42") или null, если ответ не получен.</code>
             <code>     */</code>
             <code>    async getAnswerToUltimateQuestion(): Promise&lsaquo;string | null&rsaquo; {</code>
             <code>        await this.heartOfGoldPage.navigate();</code>
             <code>        await this.heartOfGoldPage.activateImprobabilityDrive();</code>
-            <code>        return await this.heartOfGoldPage.getAnswer();</code>
+            <code>        return this.heartOfGoldPage.getAnswer();</code>
             <code>    }</code>
             <code>}</code>
         </pre>
@@ -962,12 +962,11 @@
             <code>    /**</code>
             <code>     * Получить ответ на Главный Вопрос Жизни, Вселенной и Всего Такого.</code>
             <code>     * Активирует Двигатель Невозможности и дожидается корректного ответа.</code>
-            <code>     * @returns Ответ (ожидаемо "42") или null, если ответ не получен.</code>
             <code>     */</code>
             <code>    async <mark class="important">getAnswerToUltimateQuestion():</mark> Promise&lsaquo;string | null&rsaquo; {</code>
             <code>        await this.heartOfGoldPage.navigate();</code>
             <code>        await this.heartOfGoldPage.activateImprobabilityDrive();</code>
-            <code>        return await this.heartOfGoldPage.getAnswer();</code>
+            <code>        return this.heartOfGoldPage.getAnswer();</code>
             <code>    }</code>
             <code>}</code>
         </pre>
@@ -985,12 +984,11 @@
             <code>    /**</code>
             <code>     * Получить ответ на Главный Вопрос Жизни, Вселенной и Всего Такого.</code>
             <code>     * Активирует Двигатель Невозможности и дожидается корректного ответа.</code>
-            <code>     * @returns Ответ (ожидаемо "42") или null, если ответ не получен.</code>
             <code>     */</code>
             <code>    async <mark class="important">getAnswerToUltimateQuestion():</mark> Promise&lsaquo;string | null&rsaquo; {</code>
             <code>        await this.heartOfGoldPage.<mark>navigate();</mark></code>
             <code>        await this.heartOfGoldPage.activateImprobabilityDrive();</code>
-            <code>        return await this.heartOfGoldPage.getAnswer();</code>
+            <code>        return this.heartOfGoldPage.getAnswer();</code>
             <code>    }</code>
             <code>}</code>
         </pre>
@@ -1008,12 +1006,11 @@
             <code>    /**</code>
             <code>     * Получить ответ на Главный Вопрос Жизни, Вселенной и Всего Такого.</code>
             <code>     * Активирует Двигатель Невозможности и дожидается корректного ответа.</code>
-            <code>     * @returns Ответ (ожидаемо "42") или null, если ответ не получен.</code>
             <code>     */</code>
             <code>    async <mark class="important">getAnswerToUltimateQuestion():</mark> Promise&lsaquo;string | null&rsaquo; {</code>
             <code>        await this.heartOfGoldPage.<mark>navigate();</mark></code>
             <code>        await this.heartOfGoldPage.<mark>activateImprobabilityDrive();</mark></code>
-            <code>        return await this.heartOfGoldPage.getAnswer();</code>
+            <code>        return this.heartOfGoldPage.getAnswer();</code>
             <code>    }</code>
             <code>}</code>
         </pre>
@@ -1031,12 +1028,11 @@
             <code>    /**</code>
             <code>     * Получить ответ на Главный Вопрос Жизни, Вселенной и Всего Такого.</code>
             <code>     * Активирует Двигатель Невозможности и дожидается корректного ответа.</code>
-            <code>     * @returns Ответ (ожидаемо "42") или null, если ответ не получен.</code>
             <code>     */</code>
             <code>    async <mark class="important">getAnswerToUltimateQuestion():</mark> Promise&lsaquo;string | null&rsaquo; {</code>
             <code>        await this.heartOfGoldPage.<mark>navigate();</mark></code>
             <code>        await this.heartOfGoldPage.<mark>activateImprobabilityDrive();</mark></code>
-            <code>        return await this.heartOfGoldPage.<mark>getAnswer();</mark></code>
+            <code>        return this.heartOfGoldPage.<mark>getAnswer();</mark></code>
             <code>    }</code>
             <code>}</code>
         </pre>
@@ -1184,7 +1180,7 @@
 
     <section class="slide">
         <h2>JSON Server</h2>
-        <p>😍 Keep It Simply.. позволяет просто настроить дефолты и сценарии</p>
+        <p>😍 Keep It Simply. Позволяет просто настроить дефолты и сценарии.</p>
         <pre class="language-javascript">
             <code>npm install -g json-server</code>
             <code>echo '{ "answer": "42" }' > db.json</code>
@@ -1194,7 +1190,7 @@
 
     <section class="slide">
         <h2>JSON Server</h2>
-        <p>😍 Keep It Simply.. позволяет просто настроить дефолты и сценарии</p>
+        <p>😍 Keep It Simply. Позволяет просто настроить дефолты и сценарии.</p>
         <pre class="language-javascript">
             <code>npm install -g <mark>json-server</mark></code>
             <code>echo '{ "answer": "42" }' > db.json</code>
@@ -1204,7 +1200,7 @@
 
     <section class="slide">
         <h2>JSON Server</h2>
-        <p>😍 Keep It Simply.. позволяет просто настроить дефолты и сценарии</p>
+        <p>😍 Keep It Simply. Позволяет просто настроить дефолты и сценарии.</p>
         <pre class="language-javascript">
             <code>npm install -g json-server</code>
             <code>echo '<mark>{ "answer": "42" }</mark>' > <mark class="important">db.json</mark></code>
@@ -1214,7 +1210,7 @@
 
     <section class="slide">
         <h2>JSON Server</h2>
-        <p>😍 Keep It Simply.. позволяет просто настроить дефолты и сценарии</p>
+        <p>😍 Keep It Simply. Позволяет просто настроить дефолты и сценарии.</p>
         <pre class="language-javascript">
             <code>npm install -g json-server</code>
             <code>echo '{ "answer": "42" }' > db.json</code>
@@ -1340,13 +1336,13 @@
         <h2>Preparation test</h2>
         <p>Пожалуйста, закладывайте сразу:</p>
         <ol>
-            <li class="next">
+            <li>
                 Для ряда тестов Preparation должен отключаться<br/>
-                <span class="next"><span class="font--red">Пример</span>: для логин тестов не надо делать Preparation Login</span>
+                <span><span class="font--red">Пример</span>: для логин тестов не надо делать Preparation Login</span>
             </li>
             <li class="next">
                 Preparation часто является опциональным по своей сути<br/>
-                <span class="next"><span class="font--red">Пример</span>: баннер «Accept Cookies Policy» может показываться, а может нет</span>
+                <span><span class="font--red">Пример</span>: баннер «Accept Cookies Policy» может показываться, а может нет</span>
             </li>
         </ol>
     </section>
@@ -1354,6 +1350,13 @@
     <!-- ========== -->
     <!--  Tracing    ->
     <!-- ========== -->
+
+    <section class="slide">
+        <p style="margin-top: -35px;">Когда зашёл в баг, а там ни Steps to reproduce, ни трейсов</p>
+        <figure>
+            <img class="cover" style="height: 80%; margin-top: 60px;" src="pictures/no-traces.png">
+        </figure>
+    </section>
 
     <section class="slide">
         <h2>Улучшаем архитектуру #4</h2>
@@ -1369,13 +1372,6 @@
         <div>
             <h2 class="shout" style="font-size: 80px;">Пример <span class="font--red">сбора трейсов</span></h2>
         </div>
-    </section>
-
-    <section class="slide">
-        <p style="margin-top: -35px;">Когда зашёл в баг, а там ни Steps to reproduce, ни трейсов</p>
-        <figure>
-            <img class="cover" style="height: 80%; margin-top: 60px;" src="pictures/no-traces.png">
-        </figure>
     </section>
 
     <section class="slide">
@@ -1547,8 +1543,8 @@
         <h2 style="margin-top: 20px;">Кейс 2: Автотесты пишутся, но бессистемно</h2>
         <div>
             <ul>
-                <li class="next"><span class="font--red">Проблема #1</span>: тесты пишем, но лучше не становится</li>
-                <li class="next"><span class="font--red">Проблема #2</span>: свалка из тестов</li>
+                <li><span class="font--red">Проблема #1</span>: тесты пишем, но лучше не становится</li>
+                <li><span class="font--red">Проблема #2</span>: свалка из тестов</li>
                 <li class="next">
                     Пример:
                     <ol>
@@ -1602,7 +1598,7 @@
             <ol>
                 <li class="next"><span class="font--red">Smoke</span> тесты в PR</li>
                 <li class="next">Полный прогон всех тестов <span class="font--red">Nightly</span></li>
-                <li class="next"><span class="font--red">Ежедневный анализ</span> Nightly прогонов<br/><br/></li>
+                <li class="next"><span class="font--red">Ежедневный анализ</span> Nightly прогонов</li>
                 <li class="next">⚠️ Время прогона Smoke < времени чаепития < <span class="font--red">15 min</span></li>
             </ol>
         </div>
@@ -1613,10 +1609,11 @@
         <div>
             <p>Категоризация тестов:</p>
             <ul>
-                <li class="next">Связь <span class="font--red">Page Object Model</span> с разделами</li>
-                <li class="next">Связь тестов с <span class="font--red">Page Object Model</span><br/><br/></li>
-                <li class="next">Т. е. тесты начинают принадлежать определённым разделам.</li>
+                <li class="next">связь <span class="font--red">Page Object Model</span> с разделами;</li>
+                <li class="next">связь тестов с <span class="font--red">Page Object Model</span>;</li>
             </ol>
+            <p></p>
+            <p class="next">Т. е. тесты начинают принадлежать определённым разделам.</p>
         </div>
     </section>
 
@@ -1646,7 +1643,7 @@
         <div>
             <p style="font-size: 20px; opacity: 0.5;">BDD подход при написании тестов, TDD подход при проработке требований</p>
             <blockquote class="font--l block--space-top">
-                <span class="font--red">Behavior-driven development (BDD)</span> — методология разработки, совмещающая техническую проработку и бизнес интересы.<br/>
+                <span class="font--red">Behavior-driven development (BDD)</span> — методология разработки, совмещающая техническую проработку и бизнес-интересы.<br/>
                 Позволяет бизнесу и разработке говорить на одном языке.
             </blockquote>
         </div>
@@ -1657,7 +1654,7 @@
         <div>
             <p style="font-size: 20px; opacity: 0.5;">BDD подход при написании тестов, TDD подход при проработке требований</p>
             <blockquote class="font--l block--space-top">
-                <span class="font--red">Test-driven development (TDD)</span> — к контексте E2E предлагаю трактовать так: разработка E2E тестов ведётся сразу при разработке фичи.
+                <span class="font--red">Test-driven development (TDD)</span> — в контексте E2E предлагаю трактовать так: разработка E2E тестов ведётся сразу при разработке фичи.
             </blockquote>
         </div>
     </section>
@@ -1667,22 +1664,14 @@
         <div>
             <p style="font-size: 20px; opacity: 0.5;">BDD подход при написании тестов, TDD подход при проработке требований</p>
             <ul>
-                <li class="next"><span class="font--red">Проблема </span>: тестируем кнопки, но баги всё равно лезут</li>
-                <li class="next">
-                    Пример:
-                    <ol>
-                        <li class="next">мы протестировали поведение as is</li>
-                        <li class="next">задаём сами себе вопрос: а как должно работать?</li>
-                        <li class="next">...</li>
-                    </ul>
-                </li>
+                <li><span class="font--red">Проблема:</span> тестируем кнопки, но баги всё равно лезут</li>
             </ul>
         </div>
     </section>
 
     <section class="slide">
         <h2 class="shout" style="font-size: 36px; text-align: left; margin: -25px 0 0 35px;">
-            <p class="next">– протестировали</p>
+            <p>– протестировали</p>
             <p class="next">– зафиксировали <span class="font--red">поведение бага</span></p>
             <p class="next">– <span class="font--red">в тесте</span></p>
         </h2>
@@ -1697,15 +1686,15 @@
             <p style="font-size: 20px; opacity: 0.5;">BDD подход при написании тестов, TDD подход при проработке требований</p>
             <ul>
                 <li><span class="font--red">Проблема</span>: тестируем кнопки, но баги всё равно лезут</li>
-                <li class="next"><span class="font--red">Причина #1</span>: не протестированы альтернативные сценарии</li>
-                <li class="next"><span class="font--red">Причина #2</span>: нет единого источника для написания бизнес-логики и тестов</li>
+                <li><span class="font--red">Причина #1</span>: не протестированы альтернативные сценарии</li>
+                <li><span class="font--red">Причина #2</span>: нет единого источника для написания бизнес-логики и тестов</li>
             </ul>
         </div>
     </section>
 
     <section class="slide">
         <h2 class="shout" style="font-size: 60px;">
-            Рассмотрим <span class="font--red">BDD</span> тест-кейс и код.<br/><br/>
+            Рассмотрим <span class="font--red">BDD</span> тест-кейс и код<br/><br/>
             <span class="next">Но <span class="font--red">сперва про процессы</span></span>
         </h2>
     </section>
@@ -1738,11 +1727,11 @@
             <p style="font-size: 20px; opacity: 0.5;">BDD подход при написании тестов, TDD подход при проработке требований</p>
             <p>Таким образом:</p>
             <ol>
-                <li class="next">Вовлекаем смежные роли</li>
-                <li class="next">Разбираем тест-кейсы вместе с декомпозицией</li>
-                <li class="next">
-                    Строим тесты отталкиваясь от бизнес-сценариев<br/><br/>
-                    это BDD + TDD!
+                <li>вовлекаем смежные роли;</li>
+                <li>разбираем тест-кейсы вместе с декомпозицией;</li>
+                <li>
+                    строим тесты, отталкиваясь от бизнес-сценариев;<br/><br/>
+                    Это BDD + TDD!
                 </li>
             </ol>
         </div>
@@ -1993,10 +1982,10 @@
     <section class="slide">
         <h2>Как писать тесты на важное?</h2>
         <div>
-            <p style="font-size: 20px; opacity: 0.5;">И бережливо относиться к ресурсам. Всех тестов всё равно не напишешь</p>
+            <p style="font-size: 20px; opacity: 0.5;">И бережливо относиться к ресурсам. Всех тестов всё равно не напишешь.</p>
             <ul>
-                <li class="next"><span class="font--red">Product Owner</span> скажет, что точно нужно проверить по мнению бизнеса</li>
-                <li class="next"><span class="font--red">JS Developer</span> построит корреляцию между количеством багов, частотой изменений в коде и покрытием кода</li>
+                <li class="next"><span class="font--red">Product Owner</span> скажет, что точно нужно проверить по мнению бизнеса.</li>
+                <li class="next"><span class="font--red">JS Developer</span> построит корреляцию между количеством багов, частотой изменений в коде и покрытием кода.</li>
             </ul>
             <p><br/></p>
             <p class="next" style="font-weight: bold;">Вот зачем я рассказываю доклад именно нам, JS разработчикам!</p>
